@@ -1,5 +1,4 @@
-import { useContext, useReducer, useState } from "react";
-import { blogReducer, initialBlogPosts } from "../reducers/BlogReducer";
+import { useContext, useState } from "react";
 import { BlogDispatchContext } from "../context/BlogReducerContext";
 
 

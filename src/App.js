@@ -1,12 +1,17 @@
-import './App.css';
-import { BlogForm } from './components/BlogForm';
-import { BlogList } from './components/BlogList';
+import BlogsList from "./components/BlogsList";
+import BlogsProvider from "./components/BlogsContext";
 
 function App() {
+
+//	const [someState, setSomeState] = useState("")
+
   return (
     <div className="App">
-      <BlogForm />
-      <BlogList />
+
+			<BlogsProvider>
+				<BlogsList />
+			</BlogsProvider>
+
     </div>
   );
 }
